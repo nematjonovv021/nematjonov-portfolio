@@ -47,6 +47,7 @@ nav{
 }
 .nav-logo:hover{
     transform: scale(1.05);
+    box-shadow: 0px 15px 50px 4px #442F0E;
 }
 
 .nav-items{
@@ -59,6 +60,7 @@ nav{
 .nav-items:hover{
     color: rgb(194, 194, 194);
     transform: scaleX(1.05);
+    box-shadow: 0px 15px 50px 4px #442F0E;
 }
 
 .nav-btn{
@@ -69,4 +71,12 @@ nav{
     outline: 2px solid #4FC3F7;
     background-color: #1A1A1A;
     color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover{
+    outline: 2px solid #3B82F6;
+    background-color: #282828;
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 50px 4px #442F0E;
 }
