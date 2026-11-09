@@ -180,3 +180,44 @@ button {
   max-width: 700px;
   margin-bottom: 12px;
 }
+
+.skill {
+  padding: 60px 0;
+}   
+
+.skill-title {
+  font-style: 30px;
+  margin-bottom: 300px;
+}
+
+.skill-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+}
+
+.skills-subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 40px 0 15px;
+}
+
+.skill-badge {
+  padding: 10px 14px;
+  border-radius: 25px;
+  border: 2px solid #3b82f6;
+  background-color: #282828;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.skill-badge:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+}
+
+.skill-badge.goal {
+  border: 2px dashed #6b7280;
+  color: #9ca3af;
+}
