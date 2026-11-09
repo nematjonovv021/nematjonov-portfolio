@@ -1,82 +1,182 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: #1A1A1A;
+html {
+  scroll-behavior: smooth;
 }
 
-.container{
-    width: 1140px;
-    margin: 0 auto;
-    color: azure;
+body {
+  background-color: #1a1a1a;
+  font-family: "Poppins", sans-serif;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
+button {
+  font-family: inherit;
 }
 
-.nav-item{
-    display: flex;
-    gap: 50px;
-    list-style: none;
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  color: azure;
 }
 
-.nav-item a{
-    text-decoration: none;
-    color: azure;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
 }
 
-
-.nav-logo{
-    font-size: 24px;
-    font-weight: 800;
-    font-family: 'Poppins' , sans-serif;
-    color: #ffffff;
-    letter-spacing: -1px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.nav-span{
-    color: #3B82F6;
-}
-.nav-logo:hover{
-    transform: scale(1.05);
-    box-shadow: 0px 15px 50px 4px #442F0E;
+.nav-item {
+  display: flex;
+  gap: 50px;
+  list-style: none;
 }
 
-.nav-items{
-    font-size: 18px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    color: #ffffff;
+.nav-items a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.nav-items:hover{
-    color: rgb(194, 194, 194);
-    transform: scaleX(1.05);
-    box-shadow: 0px 15px 50px 4px #442F0E;
+.nav-logo {
+  font-size: 24px;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  letter-spacing: -1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.nav-span {
+  color: #3b82f6;
+}
+.nav-logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 15px 50px 4px #442f0e;
 }
 
-.nav-btn{
-    width: 90px;
-    height: 30px;
-    border-radius: 25px;
-    border: none;
-    outline: 2px solid #4FC3F7;
-    background-color: #1A1A1A;
-    color: #ffffff;
-    transition: all 0.3s ease;
+.nav-items {
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  color: #ffffff;
 }
 
-.nav-btn:hover{
-    outline: 2px solid #3B82F6;
-    background-color: #282828;
-    transform: translateY(-5px);
-    box-shadow: 0px 15px 50px 4px #442F0E;
+.nav-items:hover {
+  color: rgb(194, 194, 194);
+  transform: scaleX(1.05);
+  box-shadow: 0px 15px 50px 4px #442f0e;
+}
+
+.nav-btn {
+  width: 90px;
+  height: 30px;
+  border-radius: 25px;
+  border: none;
+  outline: 2px solid #4fc3f7;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  outline: 2px solid #3b82f6;
+  background-color: #282828;
+  transform: translateY(-5px);
+  box-shadow: 0px 15px 50px 4px #442f0e;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  margin: 0 auto;
+  color: #ffffff;
+  gap: 60px;
+  padding: 40px 0;
+}
+
+button {
+  font-family: inherit;
+}
+
+.main-left,
+.main-right {
+  flex: 1;
+}
+.about-me {
+  padding: 60px 0;
+}
+
+.main-left {
+  width: 50%;
+}
+
+.left-info {
+  font-size: 35px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+}
+
+.left-text {
+  font-size: 18px;
+  font-weight: normal;
+  padding-top: 30px;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+}
+
+.left-btn {
+  margin-top: 35px;
+  padding: 10px 24px;
+  border-radius: 6px;
+  border: none;
+  outline: 2px solid #3b82f6;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.left-btn:hover {
+  outline: 2px solid #3b82f6;
+  background-color: #282828;
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 40px 7px #442f0e;
+  cursor: pointer;
+}
+
+.main-span {
+  color: #3b82f6;
+}
+
+.main-right {
+  width: 50%;
+}
+
+.main-right img {
+  width: 100%;
+  transition: all 0.3s ease;
+  border-radius: 15px;
+}
+
+.main-right img:hover {
+  transform: scale(1.05);
+}
+
+.about-me-title {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.about-me-text {
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 700px;
+  margin-bottom: 12px;
 }
